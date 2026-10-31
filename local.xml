@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+   <remote name="rousseauuv"
+	    fetch="https://github.com/rousseauuv"
+	    clone-depth="1" />
+
+   <remote name="hans"
+            fetch="https://github.com/gutssnv"
+            clone-depth="1" />
+
+   <remote name="backroom"
+            fetch="ssh://git@github.com/gutssnv"
+            clone-depth="1" />
+
+   <remote name="MillenniumOSS"
+	    fetch="https://github.com/MillenniumOSS"
+	    clone-depth="1" />
+
+ <!-- X6882 -->
+ <project path="device/infinix/X6882" name="android_device_infinix_X6882" remote="hans" revision="seventeen" />
+ <project path="device/infinix/X6882-kernel" name="android_device_infinix_X6882-kernel" remote="backroom" revision="vanguard" />
+ <project path="vendor/infinix/X6882" name="proprietary_vendor_infinix_X6882" remote="backroom" revision="seventeen" />
+
+ <!-- Remove Projects -->
+ <remove-project path="packages/apps/Aperture" />
+
+ <!-- Mediatek Thing's -->
+ <project path="hardware/mediatek" name="android_hardware_mediatek" remote="MillenniumOSS" revision="seventeen" />
+ <project path="hardware/deadlock" name="hardware_deadlock" remote="rousseauuv" revision="seventeen" />
+ <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr" remote="MillenniumOSS" revision="seventeen"/>
+ <project path="vendor/mediatek/ims" name="android_vendor_mediatek_ims" remote="MillenniumOSS" revision="seventeen" />
+ <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="MillenniumOSS" revision="lineage-23.2" />
+</manifest>
